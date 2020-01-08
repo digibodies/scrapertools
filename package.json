@@ -1,0 +1,75 @@
+{
+  "name": "scrapertools",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Simple utilities to extract meta details about a url",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "deploy": "npm publish",
+    "lint": "eslint . --ext .js,.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digibodies/scrapertools.git"
+  },
+  "keywords": [
+    "node",
+    "scraping",
+    "meta",
+    "open",
+    "graph",
+    "cheerio"
+  ],
+  "author": "Blaine Garrett <blaine@blainegarrett.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digibodies/scrapertools/issues"
+  },
+  "homepage": "https://github.com/digibodies/scrapertools#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@digibodies"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.15",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^12.7.5",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".test.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
